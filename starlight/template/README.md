@@ -4,6 +4,8 @@
 
 ## TO GET STARTED
 
+The install script will install right node version with nvm, get the required components and start dev server, let me know if bugs so we can fix.
+
 ```bash
 #first time to install
 bash install.sh

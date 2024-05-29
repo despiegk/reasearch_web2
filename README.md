@@ -2,4 +2,4 @@
 
 ## starlight
 
-Amazing documentation website generator, see [this readme](startlight/readme.md)
+Amazing documentation website generator, see [this readme](starlight/template/readme.md)
