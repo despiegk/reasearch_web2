@@ -1,0 +1,52 @@
+---
+title: Example Index
+description: s
+---
+
+import Counter from '../../../components/mycounter.astro';
+
+## test
+
+<Counter count='10' name='This is Great'>
+  <h2>All about Fred</h2>
+  <p>Here is some stuff about Fred.</p>
+</Counter>
+
+
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+
+<LinkCard
+  title="Customizing Starlight"
+  description="Learn how to make your Starlight site your own with custom styles, fonts, and more."
+  href="/guides/customization/"
+/>
+
+<CardGrid>
+  <LinkCard title="Authoring Markdown" href="/guides/authoring-content/" />
+  <LinkCard title="Components" href="/guides/components/" />
+</CardGrid>
+
+import { Steps } from '@astrojs/starlight/components';
+
+<Steps>
+
+1. Import the component into your MDX file:
+   ```js
+   import { Steps } from '@astrojs/starlight/components';
+   ```
+
+2. Wrap `<Steps>` around your ordered list items.
+
+    wow cool
+    <LinkCard title="Components" href="/guides/components/" />
+
+    sss
+
+3. test   
+    <LinkCard
+      title="Customizing Starlight"
+      description="Learn how to make your Starlight site your own with custom styles, fonts, and more."
+      href="/guides/customization/"
+    />
+
+</Steps>

@@ -1,0 +1,15 @@
+---
+
+import Counter from './Counter';
+
+//import { signal } from '@preact/signals';
+//const count = signal(0);
+//const data = await fetch('https://api.github.com/repos/hadley/ggplot2/commits').then(r => r.json());
+const { count, name } = Astro.props;
+
+---
+
+<Counter count={count} name={name} ></Counter>
+
+<slot /> 
+
