@@ -1,0 +1,26 @@
+##  Hetzner Online GmbH - installimage - config
+
+DRIVE1 /dev/nvme0n1
+DRIVE2 /dev/nvme1n1
+
+##  SOFTWARE RAID:
+## activate software RAID?  < 0 | 1 >
+SWRAID 0
+
+## Choose the level for the software RAID < 0 | 1 | 10 >
+SWRAIDLEVEL 1
+
+##  BOOTLOADER:
+BOOTLOADER grub
+
+##  HOSTNAME:
+HOSTNAME myhost1
+#Adapt the hostname to your needs
+
+##  PARTITIONS / FILESYSTEMS:
+PART swap swap 8G
+PART /boot ext3 1024M
+PART /      btrfs     all
+
+##  OPERATING SYSTEM IMAGE:
+IMAGE /root/.oldroot/nfs/install/../images/archlinux-latest-64-minimal.tar.gz
